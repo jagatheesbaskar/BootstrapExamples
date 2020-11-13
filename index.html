@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+	<body id="body" data-spy="scroll" data-target="#myScrollspy">
+		
+		<div class="bodyWrapper">
+			
+					<!-- Header starts Here............ -->
+				
+			<header id="myScrollspy" class="navbar-fixed-top navContainer" data-offset-top="900" data-spy="affix">
+				<nav class="navbar" role="navigation">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logoContainer">
+								<a href="#" class="navbar-brand"><span class="headerLogo">Title</span>Goes</a>
+							</div>
+						</div>
+						
+						<!-- Collection of nav links and other content for toggling -->
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+							<ul id="nav" class="nav navbar-nav navbar-right" >
+								<li class="active nav-item"><a class="nav-item-child" href="#body">HOME</a></li>
+								<li class="nav-item"><a class="nav-item-child" href="#team">TEAM</a></li>
+								<li class="nav-item"><a class="nav-item-child" href="#services">SERVICES</a></li>
+								<li class="nav-item"><a class="nav-item-child" href="#products">PRODUCTS</a></li>
+								<li class="nav-item"><a class="nav-item-child" href="#portfolio">PORTFOLIO</a></li>
+								<li class="nav-item"><a class="nav-item-child" href="#pricing">PRICING</a></li>
+								<li class="nav-item"><a class="nav-item-child" href="#">CONTACT</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			
+					<!-- Header starts Here............ -->
+					
+					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+						<!-- Carousel indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>  
+						
+						<!-- Wrapper for carousel items -->
+						<div class="carousel-inner">
+							<div class="active item full-screen" style="background-image: url('images/001.jpg'); background-repeat: no-repeat; background-size: cover; height: 100%;">
+								<div class="carousel-caption">
+								  <h3>Second slide label</h3>
+								  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+								</div>
+							</div>
+							<div class="item full-screen"style="background-image: url('images/002.jpg'); background-repeat: no-repeat; background-size: cover; height: 100%;">
+								<div class="carousel-caption">
+								  <h3>Third slide label</h3>
+								  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div id="team" class="team">
+						<div class="container">
+							<div class="col-sm-4 teamMember">
+								<div class="teamContent">
+									<h2>Harmonious Planning</h2>
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+								</div>
+								
+								<img class="img-responsive" src="images/05.jpg" alt="" />
+							</div>
+							<div class="col-sm-4 teamMember">
+								<div class="teamContent">
+									<h2>Easy Integration</h2>
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+								</div>
+								
+								<img class="img-responsive" src="images/04.jpg" alt="" />
+							</div>
+							<div class="col-sm-4 teamMember">
+								<div class="teamContent">
+									<h2>Superior Support</h2>
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+								</div>
+								
+								<img class="img-responsive" src="images/03.jpg" alt="" />
+							</div>
+
+						</div>
+					</div>
+					
+					<div id="services" class="serviceSection">
+						<div class="container service">
+							<div class="col-sm-6">
+								<h2>Why Us?</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<button type="button" class="btn btn-success btn-lg">More... <span class="glyphicon glyphicon-chevron-right"></span></button>
+							</div>
+							<div class="col-sm-6" class="accordion">
+								<div class="panel-group" id="accordion" class="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a role="button" class="panel-title-child" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Expert Research</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a class="panel-title-child" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Hi-Tech Engineering</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a class="panel-title-child" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Outstanding Results</a>
+											</h4>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse">
+											<div class="panel-body">
+												<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						
+						
+						<div id="products" class="products">
+							<div class="container">
+								<div class="row margin-40">
+									<div class="col-sm-6">
+										<h2>Recent Projects</h2>
+										<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-sm-4 projects project-1">
+										<img class="img-responsive" src="images/01.jpg" alt="" />
+										<h3><a href="#" >Interior</a> <small>ARCHITECTURE</small></h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+										<h4><a href="#" >DETAILS</a> <span class="glyphicon glyphicon-new-window"></span></a></h4>
+									</div>
+									<div class="col-sm-4 projects project-2">
+										<img class="img-responsive" src="images/1.jpg" alt="" />
+										<h3><a href="#" >Trend</a> <small>SETTING</small></h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+										<h4><a href="#" >DETAILS</a> <span class="glyphicon glyphicon-new-window"></span></a></h4>
+									</div>
+									<div class="col-sm-4 projects project-3">
+										<img class="img-responsive" src="images/02.jpg" alt="" />
+										<h3><a href="#" >Fresh Style</a> <small>PHILOSOPHY</small></h3>
+										<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+										<h4><a href="#" >DETAILS</a> <span class="glyphicon glyphicon-new-window"></span></a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div id="portfolio" class="portfolio">
+							<div class="container">
+								<div class="row margin-40">
+									<div class="col-sm-6">
+										<h2>Portfolio</h2>
+										<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<img class="img-responsive" src="images/11.jpg" alt="" />
+									</div>
+									<div class="col-sm-4">
+										<img class="img-responsive" src="images/12.jpg" alt="" />
+									</div>
+									<div class="col-sm-4">
+										<img class="img-responsive" src="images/13.jpg" alt="" />
+									</div>
+								</div>
+								<div class="row margin-20">
+									<div class="col-sm-4">
+										<img class="img-responsive" src="images/14.jpg" alt="" />
+									</div>
+									<div class="col-sm-8">
+										<img class="img-responsive" src="images/15.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div id="pricing" class="pricing">
+							<div class="container pricingContainer">
+								<div class="row margin-40 box">
+									<div class="col-sm-6">
+										<h2>Pricing</h2>
+										<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+									</div>
+									
+								</div>
+								<div class="row">									
+									<div class="col-sm-3 priceGrid">
+										<div class="icon">
+											<i class="fa fa-facebook"></i>
+										</div>
+										<div class="content">
+											<h3>Search</h3>
+											<p>I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost </p>
+										</div>
+									</div>
+									<div class="col-sm-3 priceGrid">
+										<div class="icon">
+											<i class="fa fa-google-plus"></i>
+										</div>
+										<div class="content">
+											<h3>Search</h3>
+											<p>I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost </p>
+										</div>
+									</div>
+									<div class="col-sm-3 priceGrid">
+										<div class="icon">
+											<i class="fa fa-twitter"></i>
+										</div>
+										<div class="content">
+											<h3>Search</h3>
+											<p>I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">									
+									<div class="col-sm-4 priceGrid priceGrid1">
+										<div class="icon">
+											<i class="fa fa-pinterest-p"></i>
+										</div>
+										<div class="content">
+											<h3>Search</h3>
+											<p>I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost </p>
+										</div>
+									</div>
+									<div class="col-sm-4 priceGrid priceGrid1">
+										<div class="icon">
+											<i class="fa fa-behance"></i>
+										</div>
+										<div class="content">
+											<h3>Search</h3>
+											<p>I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost </p>
+										</div>
+									</div>
+									<div class="col-sm-4 priceGrid priceGrid1">
+										<div class="icon">
+											<i class="fa fa-life-ring"></i>
+										</div>
+										<div class="content">
+											<h3>Search</h3>
+											<p>I haven't looked back since. It makes the responsive development easy and not a chore, and provides a reasonable experience on all devices at minimal cost </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+				</div>
+			
+		<script type = "text/javascript"  src ="libs/jquery.min.js"></script>			
+		<script type = "text/javascript"  src ="libs/bootstrap.min.js"></script>			
+		<script src="js/script.js"></script>
+	</body>
+</html>

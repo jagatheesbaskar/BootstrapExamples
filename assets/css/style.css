@@ -1,0 +1,305 @@
+/* @import CSS */
+
+@import 'animate.css';
+
+		/* Global Declartion Start.......... */
+* {
+	transition: .3s;
+	transition-timing-function: linear;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+.bodyWrapper {
+	height: 100%;
+}
+.carousel, .carousel-inner {
+	height: 100%;
+}
+h2, h3,a {
+	color: #515769;
+}
+p {
+	color: #a6a7aa;
+}
+a:focus, a:hover {
+    text-decoration: none; 
+	color: #515769;
+	opacity: .8;
+}
+.team, .service, .products, .portfolio, .pricing {
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.serviceSection, .portfolio {
+	background: #fafafa;
+}
+
+		/* Global Declartion End.......... */
+.container {
+	/* border: 1px solid black; */
+}
+header .navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid #fdfdfd;
+}
+.logoContainer {
+	float: left;
+}
+.headerLogo {
+	color: orange;
+}
+.logoContainer >.navbar-brand {
+	padding: 20px 0;
+}
+ul li a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #fff;  
+  transform: scaleX(0); 
+  transition: transform 250ms ease-in-out;
+  color: red;
+}
+ul li a:hover:after { transform: scaleX(1); color: red;}
+ul li.nav-item a:after{  transform-origin:  0% 0%; }
+.navbar-nav>li>a {
+    padding: 20px;
+	font-size: 16px;
+    font-weight: 600;
+}
+.nav-item:last-child .nav-item-child {
+    padding-right: 0;
+}
+.nav>li>a.nav-item-child:focus, .nav>li>a.nav-item-child:hover {
+	text-decoration: none;
+    background-color: transparent;
+}
+.logoContainer >a , .nav-item > a {
+	color: #fff;
+	font-weight: 500;
+}
+.teamContent {
+	margin-bottom: 60px;
+}
+.btn.btn-success {
+    color: #ffffff;
+    background-color: #515769;
+    border-color: transparent;
+}
+.btn.btn-success:hover {
+    color: #ffffff;
+    background-color: #fd871f;
+    border-color: transparent;
+}
+.panel-group .panel {
+	border: none;
+}
+.panel-default>.panel-heading {
+    color: #515769;
+    background: #fff;
+    border: none;
+    padding: 0;
+}
+.panel-title{
+	font-size: 22px;
+}
+.panel-title-child {
+    display: block;
+    padding: 30px;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    font-size: 16px;
+    border-top: none;
+    padding: 0 30px 30px;
+    margin-top: -1px;
+}
+.affix {
+    background: olivedrab;
+}
+.navbar-nav>li>a:focus, .navbar-nav>li>a:hover {
+	color: red;
+    background-color: transparent;
+}
+.navbar-nav>.active>a:after, .navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover:after {	
+    background-color: transparent;
+	transform: scaleX(1);
+	color: red;
+}
+.margin-40 {
+	margin-bottom: 40px;
+}
+.margin-20 {
+	margin-top: 20px;
+}
+h3 .small, h3 small {
+	margin-left: 16px;
+}
+span.glyphicon.glyphicon-new-window {
+    font-size: 11px;
+    position: relative;
+    top: -5px;
+    left: 7px;
+    color: red;
+}
+.projects p {
+	margin-bottom:15px;
+}
+.portfolio img {
+	cursor: pointer;
+}
+.priceGrid {
+	/* padding:50px; */
+	border: 1px solid #e8e0e0;
+}
+.priceGrid:hover {
+	padding-top: 20px;
+	cursor: pointer;
+}
+.pricing .service-icon {
+    display: block;
+    font-size: 30px;
+    color: #999caa;
+    margin-bottom: 30px;
+}
+.price-element > .glyphicon-glass {
+	font-size: 30px;
+    color: #fd871f;
+}
+
+.pricingContainer {
+	position: relative;
+}
+.pricingContainer .priceGrid {
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: calc(300px - 40px);
+	width: calc(33.33% - 40px);
+	margin: 15px;
+	background: #9c27b0;
+	border-radius: 5px;
+}
+.pricingContainer .priceGrid .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: inherit;
+	background: #ff0000;
+	transition: 0.5s;
+	z-index: 1;
+}
+.pricingContainer .priceGrid:hover .icon {
+    top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.pricingContainer .priceGrid .icon .fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.5s;
+	color: #fff;
+	font-size: 80px;
+}
+.pricingContainer .priceGrid:hover .icon .fa {
+	font-size: 40px;
+}
+.pricingContainer .priceGrid .content {
+	position: absolute;
+	top: 100%;
+	height: calc(250px - 100px);
+	text-align: center;
+	box-sizing: border-box;
+	padding: 20px;
+	transition: 0.5s;
+}
+.pricingContainer .priceGrid:hover .content {
+	top: 100px;
+}
+.pricingContainer .priceGrid .content h3 {
+	margin: 0 0 10px;
+	padding: 0;
+	color: #ffffff;
+	font-size: 24px;
+}
+.pricingContainer .priceGrid .content p {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+.pricingContainer .priceGrid:nth-child(1) .icon {
+	background: #4caf50;	 
+}
+.pricingContainer .priceGrid:nth-child(1) {
+	background: #319635;
+}
+.pricingContainer .priceGrid:nth-child(2) .icon {
+	background: #aa5cb7;
+}
+.pricingContainer .priceGrid:nth-child(2) {
+	background: #9c27b0;
+}
+.pricingContainer .priceGrid:nth-child(3) .icon {
+	background: #8963ce;
+}
+.pricingContainer .priceGrid:nth-child(3) {
+	background: #7248bd;
+}
+.pricingContainer .priceGrid1:nth-child(1) .icon {
+	background: #7da5b9;
+}
+.pricingContainer .priceGrid1:nth-child(1) {
+	background: #6b8d9e;
+}
+.pricingContainer .priceGrid1:nth-child(2) .icon {
+	background: #e22518
+}
+.pricingContainer .priceGrid1:nth-child(2) {
+	background: #F44336;
+}
+
+.pricingContainer .priceGrid1:nth-child(3) .icon {
+	background: #1a5651;
+}
+.pricingContainer .priceGrid1:nth-child(3) {
+	background: #227b73;
+}
+/* Parallax Effect.......... 
+#team, .serviceSection{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#team {
+	background-image: url("../../images/download.jpg");
+    min-height: 400px;
+}
+*/
+/* Media Querie............ */
+@media (min-width: 768px) {
+	
+	.navContainer .navbar-header a {
+		font-size:24px;
+		padding: 20px;
+	}
+	.affix .navbar-header a {
+		font-size:18px;
+		padding: 15px;
+	}
+	.affix .navbar-collapse .navbar-nav>li>a {
+		padding: 15px;
+	}
+	.navbar-nav>li>a {
+		padding: 20px;
+	}
+}
